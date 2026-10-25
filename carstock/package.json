@@ -1,0 +1,15 @@
+{
+  "name": "carstock-dealership-inventory",
+  "private": true,
+  "version": "1.1.0",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:web": "npm --prefix frontend run dev",
+    "test": "pytest && npm --prefix frontend test",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

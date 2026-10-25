@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data and secrets
+.env
+*.db
+backend/data/
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/coverage/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
